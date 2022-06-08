@@ -9,7 +9,7 @@ tr {
 td {
     width: 133px;
     height: 133px;
-    border: 5px solid rgb(255, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
 }
 
 tr:first-child td {
