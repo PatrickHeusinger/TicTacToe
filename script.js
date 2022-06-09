@@ -18,10 +18,10 @@ function fillShape(id) {
 function draw() {
     for (let i = 0; i < storage.length; i++) {
         if (storage[i] == 'circle') {
-            document.getElementById('circle-' + i).classList.remove(d - none);
+            document.getElementById('circle-' + i).classList.remove('d-none');
         }
         if (storage[i] == 'cross') {
-            document.getElementById('cross-' + i).classList.remove(d - none);
+            document.getElementById('cross-' + i).classList.remove('d-none');
         }
     }
 }
