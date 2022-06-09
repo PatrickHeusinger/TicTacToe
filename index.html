@@ -11,6 +11,8 @@
 </head>
 
 <body>
+    <img id="game-over" class="gameOver d-none" src="img/gameOver2.png">
+    <button onclick="restart()" id="restart" class="restart d-none">Restart</button>
     <div class="player">
         <div id="player-1" class="player-inactiv">
             <img src="img/circle.png">Player 1
@@ -19,6 +21,14 @@
             <img src="img/cross.webp">Player 2
         </div>
     </div>
+    <div id="line-1" class="line-horizontal" style="top: 390px;"></div>
+    <div id="line-2" class="line-horizontal" style="top: 530px;"></div>
+    <div id="line-3" class="line-horizontal" style="top: 670px;"></div>
+    <div id="line-4" class="line-horizontal line-vertical" style="top: 530px; left:90px;"></div>
+    <div id="line-5" class="line-horizontal line-vertical" style="top: 530px;"></div>
+    <div id="line-6" class="line-horizontal line-vertical" style="top: 530px; right:90px;"></div>
+    <div id="line-7" class="line-horizontal" style="top: 530px; transform: rotate(45deg)scaleX(0.0); width:500px;"></div>
+    <div id="line-8" class="line-horizontal" style="top: 530px; transform: rotate(-45deg)scaleX(0.0);width:500px;"></div>
     <table>
         <tr>
             <td onclick="fillShape(0)">
