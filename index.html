@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <img id="game-over" class="gameOver d-none" src="img/gameOver2.png">
     <button onclick="restart()" id="restart" class="restart d-none">Restart</button>
     <div class="player">
@@ -21,58 +22,62 @@
             <img src="img/cross.webp">Player 2
         </div>
     </div>
-    <div id="line-1" class="line-horizontal" style="top: 390px;"></div>
-    <div id="line-2" class="line-horizontal" style="top: 530px;"></div>
-    <div id="line-3" class="line-horizontal" style="top: 670px;"></div>
-    <div id="line-4" class="line-horizontal line-vertical" style="top: 530px; left:90px;"></div>
-    <div id="line-5" class="line-horizontal line-vertical" style="top: 530px;"></div>
-    <div id="line-6" class="line-horizontal line-vertical" style="top: 530px; right:90px;"></div>
-    <div id="line-7" class="line-horizontal" style="top: 530px; transform: rotate(45deg)scaleX(0.0); width:500px;"></div>
-    <div id="line-8" class="line-horizontal" style="top: 530px; transform: rotate(-45deg)scaleX(0.0);width:500px;"></div>
-    <table>
-        <tr>
-            <td onclick="fillShape(0)">
-                <img id="circle-0" class="overlay d-none" src="img/circle.png">
-                <img id="cross-0" class="overlay d-none" src="img/cross.webp">
-            </td>
-            <td onclick="fillShape(1)">
-                <img id="circle-1" class="overlay d-none" src="img/circle.png">
-                <img id="cross-1" class="overlay d-none" src="img/cross.webp">
-            </td>
-            <td onclick="fillShape(2)">
-                <img id="circle-2" class="overlay d-none" src="img/circle.png">
-                <img id="cross-2" class="overlay d-none" src="img/cross.webp">
-            </td>
-        </tr>
-        <tr>
-            <td onclick="fillShape(3)">
-                <img id="circle-3" class="overlay d-none" src="img/circle.png">
-                <img id="cross-3" class="overlay d-none" src="img/cross.webp">
-            </td>
-            <td onclick="fillShape(4)">
-                <img id="circle-4" class="overlay d-none" src="img/circle.png">
-                <img id="cross-4" class="overlay d-none" src="img/cross.webp">
-            </td>
-            <td onclick="fillShape(5)">
-                <img id="circle-5" class="overlay d-none" src="img/circle.png">
-                <img id="cross-5" class="overlay d-none" src="img/cross.webp">
-            </td>
-        </tr>
-        <tr>
-            <td onclick="fillShape(6)">
-                <img id="circle-6" class="overlay d-none" src="img/circle.png">
-                <img id="cross-6" class="overlay d-none" src="img/cross.webp">
-            </td>
-            <td onclick="fillShape(7)">
-                <img id="circle-7" class="overlay d-none" src="img/circle.png">
-                <img id="cross-7" class="overlay d-none" src="img/cross.webp">
-            </td>
-            <td onclick="fillShape(8)">
-                <img id="circle-8" class="overlay d-none" src="img/circle.png">
-                <img id="cross-8" class="overlay d-none" src="img/cross.webp">
-            </td>
-        </tr>
-    </table>
+    <div class="canvas">
+        <div id="line-1" class="line-horizontal" style="top: 65px;"></div>
+        <div id="line-2" class="line-horizontal" style="top: 205px;"></div>
+        <div id="line-3" class="line-horizontal" style="top: 345px;"></div>
+        <div id="line-4" class="line-horizontal line-vertical" style="top: 210px; right:157px;"></div>
+        <div id="line-5" class="line-horizontal line-vertical" style="top: 210px;"></div>
+        <div id="line-6" class="line-horizontal line-vertical" style="top: 210px; left:157px;"></div>
+        <div id="line-7" class="line-horizontal" style="top: 205px; transform: rotate(45deg)scaleX(0.0); width:500px;"></div>
+        <div id="line-8" class="line-horizontal" style="top: 205px; transform: rotate(-45deg)scaleX(0.0);width:500px;"></div>
+
+        <table>
+
+            <tr>
+                <td onclick="fillShape(0)">
+                    <img id="circle-0" class="overlay d-none" src="img/circle.png">
+                    <img id="cross-0" class="overlay d-none" src="img/cross.webp">
+                </td>
+                <td onclick="fillShape(1)">
+                    <img id="circle-1" class="overlay d-none" src="img/circle.png">
+                    <img id="cross-1" class="overlay d-none" src="img/cross.webp">
+                </td>
+                <td onclick="fillShape(2)">
+                    <img id="circle-2" class="overlay d-none" src="img/circle.png">
+                    <img id="cross-2" class="overlay d-none" src="img/cross.webp">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="fillShape(3)">
+                    <img id="circle-3" class="overlay d-none" src="img/circle.png">
+                    <img id="cross-3" class="overlay d-none" src="img/cross.webp">
+                </td>
+                <td onclick="fillShape(4)">
+                    <img id="circle-4" class="overlay d-none" src="img/circle.png">
+                    <img id="cross-4" class="overlay d-none" src="img/cross.webp">
+                </td>
+                <td onclick="fillShape(5)">
+                    <img id="circle-5" class="overlay d-none" src="img/circle.png">
+                    <img id="cross-5" class="overlay d-none" src="img/cross.webp">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="fillShape(6)">
+                    <img id="circle-6" class="overlay d-none" src="img/circle.png">
+                    <img id="cross-6" class="overlay d-none" src="img/cross.webp">
+                </td>
+                <td onclick="fillShape(7)">
+                    <img id="circle-7" class="overlay d-none" src="img/circle.png">
+                    <img id="cross-7" class="overlay d-none" src="img/cross.webp">
+                </td>
+                <td onclick="fillShape(8)">
+                    <img id="circle-8" class="overlay d-none" src="img/circle.png">
+                    <img id="cross-8" class="overlay d-none" src="img/cross.webp">
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
