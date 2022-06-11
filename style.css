@@ -118,7 +118,7 @@ table tr td:last-child {
     border: 2px solid white;
     cursor: pointer;
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     z-index: 99;
 }
 
